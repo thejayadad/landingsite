@@ -1,5 +1,6 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Copyright from '@/components/Copyright'
 import GallerySection from '@/components/GallerySection'
 import Hero from '@/components/Hero'
 import Interview from '@/components/Interview'
@@ -9,7 +10,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-   <main className='max-w-[1920px] mx-auto overflow-hidden bg-white'>
+   <main className=''>
     <Hero />
     <About />
     <GallerySection />
@@ -17,6 +18,7 @@ export default function Home() {
     <Testimonal />
     <Interview />
     <Contact />
+    <Copyright />
    </main>
   )
 }

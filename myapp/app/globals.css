@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-      @apply font-secondary text-lg text-dark  bg-[#E5E5E5];
-    }
     .section {
       @apply py-[40px] lg:py-[160px];
     }

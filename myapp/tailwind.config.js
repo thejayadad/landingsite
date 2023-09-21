@@ -1,40 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
-    fontFamily: {
-      primary: 'Oswald',
-      secondary: 'Raleway',
-      tertiary: 'Rozha One',
-    },
-    container: {
-      padding: {
-        DEFAULT: '20px',
-        lg: '0',
-      },
-    },
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1300px',
-    },
     extend: {
-      colors: {
-        dark: '#111111',
-        grey: {
-          DEFAULT: '#555555',
-        },
-      },
       backgroundImage: {
-        hero: "url('/src/img/hero/bg.jpg')",
+        hero: "url('https://images.pexels.com/photos/2284166/pexels-photo-2284166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
         about: "url('/src/img/about/image.png')",
         interview: "url('/src/img/interview/bg.png')",
-      },
-      content: {
-        outlineText: 'url("/src/img/hero/outline-text.svg")',
       },
     },
   },
   plugins: [],
-};
+}
