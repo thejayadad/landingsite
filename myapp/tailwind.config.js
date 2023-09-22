@@ -6,20 +6,30 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-
-      container: {
-        padding: {
-          DEFAULT: '20px',
-          lg: '0',
-        },
+    fontFamily: {
+      primary: 'Oswald',
+      secondary: 'Raleway',
+      tertiary: 'Rozha One',
+    },
+    container: {
+      padding: {
+        DEFAULT: '20px',
+        lg: '0',
       },
+    },
+    extend: {
       backgroundImage: {
-        hero: "url('https://images.pexels.com/photos/2284166/pexels-photo-2284166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+        'hero': "linear-gradient(rgba(0,0,0,.8), rgba(0,0,0, .8)), url('../public/hero.png')",
         about: "url('/src/img/about/image.png')",
         interview: "url('/src/img/interview/bg.png')",
+      },
+      colors: {
+        dark: '#111111',
+        grey: {
+          DEFAULT: '#555555',
+        },
       },
     },
   },
   plugins: [],
-}
+};
